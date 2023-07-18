@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.55em 1.5em 0.5em;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    animation: button-hover 0.5s ease 0s;
+    background-color: white;
+    color: rgb(198, 0, 255);
+}
+
+@keyframes button-hover {
+    0% {
+        background-color: rgb(198, 0, 255);
+    }
+
+    50% {
+        background-color: #ccc;
+    }
+
+    100% {
+        background-color: white;
+        color: rgb(198, 0, 255);
+    }
+
+}

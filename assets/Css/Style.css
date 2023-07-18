@@ -1,0 +1,47 @@
+@import url(Global-Style.css);
+
+.nav__header {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 16px;
+    position: fixed;
+    top: 0;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__header-transparent{
+    background: rgba(0, 0, 0, .2);
+}
+
+.header__nav-image {
+    height: 27px;
+}
+.header__item-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: .75rem;
+    font-weight: 700;
+
+}
+
+.btn__nav--singin {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;    
+}
+
+.btn__nav-signature {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(198, 0, 255);
+    padding: 6px;
+    border-radius: 50rem;
+}
+
+       
+    
