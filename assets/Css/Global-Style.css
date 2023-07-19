@@ -3,6 +3,14 @@
 
 :root {
     --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --text-color:#fff;
+    --btn-bg-color-gradient: linear-gradient(
+        45deg,
+        #9b34ef 0%,
+        #490cb0 20%,
+        transparent 50%
+      );
 }
 
 * {
@@ -48,5 +56,4 @@ p {
         background-color: white;
         color: rgb(198, 0, 255);
     }
-
 }
