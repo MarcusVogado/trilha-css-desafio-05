@@ -9,7 +9,7 @@
     top: 0;
     background: black;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     z-index: 1;
 }
 
@@ -39,7 +39,7 @@
 .nav__btn-signature {
     text-transform: uppercase;
     text-decoration: none;
-    color:var(--text-color);
+    color: var(--text-color);
     background-color: rgb(198, 0, 255);
     padding: 6px;
     border-radius: 50rem;
@@ -151,49 +151,64 @@ h4 {
     border: none;
     cursor: pointer;
     animation: wiggle 2.2s linear infinite;
-  }
-  
-  .header-button.button--gradient {
+}
+
+.header-button.button--gradient {
     background: var(--btn-bg-color-gradient);
     outline: 3px solid transparent;
     transition: background 1s, outline 1s, transform 1s;
     background-size: 250%;
-  }
-  
-  .header-button.button--gradient:hover {
+}
+
+.header-button.button--gradient:hover {
     background-color: transparent;
     background-position: 100%;
     outline: 2px solid var(--secondary-color);
     transform: scale(1.05);
-  }
+}
 
-  .header-text-footer{
+.header-text-footer {
     margin-top: 20px;
     color: var(--text-color);
     width: 250px;
     text-align: center;
     font-size: .8rem;
-  }
-.main-container{
+}
+
+.main-container {
     margin: auto;
+    display: flex;
+    flex-direction: column;
     background: url("../Images/background-movies-series.png") no-repeat;
     background-size: cover;
     position: relative;
+    gap: 16px;
+    margin-bottom: 20px;
+    
+}
+
+.main-container::after {
+    content: "";
+    width: 100%;
+    height: 60px;
+    position: absolute;    
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
 
 }
 
-.content-title{
+.content-title {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
-  .main-title{
+.main-title {
     width: 70%;
     color: var(--text-color);
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-  }
+}
 
 
 @keyframes wiggle {
@@ -225,4 +240,77 @@ h4 {
     100% {
         transform: rotate(0);
     }
+}
+.main-plans{
+    margin-bottom: 30px;
+}
+
+.main__plan-container {
+    display: flex;
+    gap: 60px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+    perspective-origin: top;
+}
+
+.plan__card-content {
+    display: flex;
+    flex-direction: column;        
+    border-radius: 1rem;
+    min-height: 550px;
+    width: 400px;
+    padding: 30px 50px;
+    background: var(--card-bg-color);
+    transition: transform 1s ease-in-out;
+}
+
+.main__plan-container:has(.plan__card-content:nth-child(1):hover) .plan__card-content:nth-child(2) {
+    transform: rotateY(-45deg);
+}
+
+.main__plan-container:has(.plan__card-content:nth-child(2):hover) .plan__card-content:nth-child(1) {
+    transform: rotateY(45deg);
+}
+
+.plan__title-item {
+    display: flex;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    box-sizing: border-box;   
+}
+.plan-descriptions{
+    flex: 1;
+}
+
+.plan-title {
+    color: var(--text-color);
+}
+
+.plan-price {
+    font-family: "Raleway", sans-serif;
+    color: var(--text-color);
+}
+
+.plan-description {
+    color: var(--text-color);
+    list-style: none;
+    text-align: left;
+    font-size: 0.8rem;    
+}
+
+.plan-description::marker {
+    content: "+";
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-left: 8px;
+}
+
+.plan-button {
+    font-size: .5rem;
+    margin: 0;
+    padding: 16px;
+    text-align: center;  
 }

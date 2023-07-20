@@ -5,6 +5,7 @@
     --primary-color: #020228;
     --secondary-color: #ff00e5;
     --text-color:#fff;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
     --btn-bg-color-gradient: linear-gradient(
         45deg,
         #9b34ef 0%,
@@ -16,6 +17,31 @@
 * {
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
+}
+.button-global{
+    margin-top: 16px;
+    padding: 16px 36px;
+    background-color: var(--tertiary-color);
+    border-radius: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+.button-global.button-gradient{
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+}
+.button-global.button-gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
 }
 
 body {
