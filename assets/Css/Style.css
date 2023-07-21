@@ -98,6 +98,13 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width:500px) {
+    .header__content-item {
+        gap: 0px;
+        flex-wrap: nowrap;
+    }
+}
+
 .img-chanel {
     object-fit: contain;
 }
@@ -179,19 +186,17 @@ h4 {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background: url("../Images/background-movies-series.png") no-repeat;
-    background-size: cover;
     position: relative;
     gap: 16px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 50px;
+    scroll-margin-top: 8rem;
 }
 
 .main-container::after {
     content: "";
     width: 100%;
     height: 60px;
-    position: absolute;    
+    position: absolute;
     bottom: 0;
     background: linear-gradient(0deg, var(--primary-color), transparent);
 
@@ -241,8 +246,22 @@ h4 {
         transform: rotate(0);
     }
 }
-.main-plans{
+
+.main__plans {
     margin-bottom: 30px;
+    background: url("../Images/background-movies-series.png") no-repeat opacity;
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+}
+
+.main__plans::after {
+    content: "";
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
 }
 
 .main__plan-container {
@@ -257,7 +276,7 @@ h4 {
 
 .plan__card-content {
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;
     border-radius: 1rem;
     min-height: 550px;
     width: 400px;
@@ -279,9 +298,10 @@ h4 {
     width: 100%;
     top: 0;
     justify-content: space-between;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
-.plan-descriptions{
+
+.plan-descriptions {
     flex: 1;
 }
 
@@ -298,7 +318,7 @@ h4 {
     color: var(--text-color);
     list-style: none;
     text-align: left;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;
 }
 
 .plan-description::marker {
@@ -306,11 +326,161 @@ h4 {
     color: var(--text-color);
     font-size: 2rem;
     margin-left: 8px;
+
 }
 
 .plan-button {
     font-size: .5rem;
     margin: 0;
     padding: 16px;
-    text-align: center;  
+    text-align: center;
+
+}
+
+.main__cards {    
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 26px;
+    padding: 26px;   
+}
+
+@media screen and (max-width:861px) {
+    .main__cards {      
+        grid-template-columns: repeat(6, 250px);
+        grid-template-rows: repeat(1,400px);
+        justify-content: flex-start;
+        overflow: auto hidden;
+        
+    }
+    ::-webkit-scrollbar {
+        width: 20px;
+      }
+    ::-webkit-scrollbar-thumb {
+        background: var(--secondary-color); 
+        border-radius: 10px;
+      }
+}
+@media (pointer: coarse) {
+    .main-card:hover {
+      transform: none;
+    }
+}
+.main-card {
+    display: flex;   
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 1s, background 1s, border 2s;
+    flex: 1;
+}
+
+.main-card:hover {
+    border: 1px solid var(--secondary-color);
+    transform: scale(1.08);
+}
+
+.card-hbomax {
+    background-image: url(../Images/hbo-default_0.webp);
+}
+
+.card-hbomax:hover {
+    background-image: url(../Images/hbo-hover_0.webp);
+}
+
+.card-max-original {
+    background-image: url(../Images/MAX-Default.webp);
+}
+
+.card-max-original:hover {
+    background-image: url(../Images/MAX-Hover.webp);
+}
+
+.card-dc {
+    background-image: url(../Images/DC_Default.webp);
+}
+
+.card-dc:hover {
+    background-image: url(../Images/DC-Hover.webp);
+}
+
+.card-wb {
+    background-image: url(../Images/WB-Default.webp);
+}
+
+.card-wb:hover {
+    background-image: url(../Images/WB-Hover.webp);
+}
+
+.card-cn {
+    background-image: url(../Images/CN-Default.webp);
+}
+
+.card-cn:hover {
+    background-image: url(../Images/CN-Hover.png);
+}
+
+.card-champions {
+    background-image: url(../Images/UCL-Default.webp);
+}
+
+.card-champions:hover {
+    background-image: url(../Images/UCL-Hover.webp);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.footer-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--link-color);
+}
+
+.footer-link:hover {
+    color: white;
+    filter: brightness(3);
+}
+
+.footer-copy-info {
+    margin: 0;
+    padding: 0;
+    color: var(--link-color);
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.footer-social-medias {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-social-media:hover {
+    filter: brightness(1.5);
+}
+
+@media screen and (max-width:500px) {
+    .footer__links{        
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 }
