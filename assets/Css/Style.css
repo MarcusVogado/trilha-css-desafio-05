@@ -383,51 +383,51 @@ h4 {
 }
 
 .card-hbomax {
-    background-image: url(../Images/hbo-default_0.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/hbo-default_0.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-hbomax:hover {
-    background-image: url(../Images/hbo-hover_0.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/hbo-hover_0.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-max-original {
-    background-image: url(../Images/MAX-Default.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/MAX-Default.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-max-original:hover {
-    background-image: url(../Images/MAX-Hover.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/MAX-Hover.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-dc {
-    background-image: url(../Images/DC_Default.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/DC_Default.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-dc:hover {
-    background-image: url(../Images/DC-Hover.webp);
+    background-image: url(../Images/DC-Hover.https://hbomax-images.warnermediacdn.com/2022-10/DC-Hover.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-wb {
-    background-image: url(../Images/WB-Default.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/WB-Default.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-wb:hover {
-    background-image: url(../Images/WB-Hover.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/WB-Hover.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-cn {
-    background-image: url(../Images/CN-Default.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/CN-Default.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-cn:hover {
-    background-image: url(../Images/CN-Hover.png);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/CN-Hover.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-champions {
-    background-image: url(../Images/UCL-Default.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/UCL-Default.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 .card-champions:hover {
-    background-image: url(../Images/UCL-Hover.webp);
+    background-image: url(https://hbomax-images.warnermediacdn.com/2022-10/UCL-Hover.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com);
 }
 
 footer {
